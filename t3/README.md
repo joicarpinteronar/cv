@@ -26,7 +26,7 @@ Complete la tabla:
 
 | Integrante | github nick |
 |------------|-------------|
-|Jose Ivan Carpintero            |https://github.com/joicarpinteronar/cv.git             |
+|Jose Ivan Carpintero            |joicarpinteronar|
 
 ## Entrega
 

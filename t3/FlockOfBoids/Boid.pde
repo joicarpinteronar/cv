@@ -9,8 +9,10 @@ class Boid {
   float sc = 3; // scale factor for the render of the boid
   float flap = 0;
   float t = 0;
+  PShape s;
 
   Boid(Vector inPos) {
+    s = createShape();
     position = new Vector();
     position.set(inPos);
     frame = new Frame(scene) {
@@ -27,6 +29,76 @@ class Boid {
     velocity = new Vector(random(-1, 1), random(-1, 1), random(1, -1));
     acceleration = new Vector(0, 0, 0);
     neighborhoodRadius = 100;
+    if (vertexVertexMode) {
+      pushStyle();
+      strokeWeight(2);
+      stroke(color(100, 100, 40));
+      fill(color(100, 100, 0, 125));
+
+      // highlight boids under the mouse
+      if (scene.trackedFrame("mouseMoved") == frame) {
+        stroke(color(0, 0, 255));
+        fill(color(0, 0, 255));
+  }
+   // highlight avatar
+      if (frame ==  avatar) {
+        stroke(color(255, 0, 0));
+        fill(color(255, 0, 0));
+      }
+      s.beginShape(TRIANGLE_STRIP);
+      s.vertex(0, 3*sc, 0);
+      s.vertex(0, 1*sc, 0);
+      s.vertex(8*sc, 0, 0);
+
+      s.vertex(0, 0, -1*sc);
+      s.vertex(0, -1*sc, 0);
+      s.vertex(8*sc, 0, 0);
+      s.vertex(0, -3*sc, 0);
+      s.endShape();
+      popStyle();
+    } else {
+      pushStyle();
+      strokeWeight(2);
+      stroke(color(200, 200, 40));
+      fill(color(100, 100, 0, 125));
+
+      // highlight boids under the mouse
+      if (scene.trackedFrame("mouseMoved") == frame) {
+        stroke(color(0, 0, 255));
+        fill(color(0, 0, 255));
+      }
+
+      // highlight avatar
+      if (frame ==  avatar) {
+        stroke(color(255, 0, 0));
+        fill(color(255, 0, 0));
+      }
+      s.beginShape(TRIANGLE);
+      int[][] faceList = {
+        {0, 1, 2}, 
+        {1, 2, 3}, 
+        {1, 3, 4}, 
+        {1, 4, 5}
+      };
+
+      float[][] vertexList = {
+        {0, 3*sc, 0}, 
+        {8*sc, 0, 0}, 
+        {0, 1*sc, 0}, 
+        {0, 0, -1*sc}, 
+        {0, -1*sc, 0}, 
+        {0, -3*sc, 0}
+      };
+
+      for (int i = 0; i < faceList.length; i++) {
+        for (int j = 0; j < faceList[i].length; j++) {
+          int v = faceList[i][j];
+          s.vertex(vertexList[v][0], vertexList[v][1], vertexList[v][2]);
+        }
+      }
+      s.endShape();
+      popStyle();
+    }
   }
 
   public void run(ArrayList<Boid> bl) {
@@ -131,16 +203,20 @@ class Boid {
   }
 
   void render() {
+    if (immediateMode) {
     pushStyle();
 
     // uncomment to draw boid axes
     //scene.drawAxes(10);
+    
+    //draw boid -color principal
+      if (vertexVertexMode) {
 
     strokeWeight(2);
     stroke(color(40, 255, 40));
     fill(color(0, 255, 0, 125));
 
-    // highlight boids under the mouse
+    // highlight boids under the mouse - render estatico
     if (scene.trackedFrame("mouseMoved") == frame) {
       stroke(color(0, 0, 255));
       fill(color(0, 0, 255));
@@ -148,9 +224,37 @@ class Boid {
 
     // highlight avatar
     if (frame ==  avatar) {
-      stroke(color(255, 0, 0));
-      fill(color(255, 0, 0));
+      stroke(color(0, 0, 255));
+      fill(color(0, 0, 255));
     }
+    vertexVertexDraw(sc);
+      } else {
+        strokeWeight(2);
+        stroke(color(0, 164, 146));
+        fill(color(255, 0, 0, 125));
+
+        // highlight boids under the mouse
+        if (scene.trackedFrame("mouseMoved") == frame) {
+          stroke(color(0, 164, 226));
+          fill(color(0, 0, 255));
+        }
+
+        // highlight avatar
+        if (frame ==  avatar) {
+          stroke(color(255, 0, 0));
+          fill(color(255, 0, 0));
+        }
+        faceVertexDraw(sc);
+      }
+
+      popStyle();
+    } else {
+      shape(s);
+    }
+  }
+}
+    
+  /*
 
     //draw boid
     beginShape(TRIANGLES);
@@ -174,3 +278,4 @@ class Boid {
     popStyle();
   }
 }
+*/

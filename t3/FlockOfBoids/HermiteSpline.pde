@@ -1,9 +1,15 @@
 class HermiteSpline extends Spline {
-  public HermiteSpline(List<Vector> points, int resolution) {
-    super(points, resolution);
+  protected List<Vector> points;
+  public HermiteSpline(List<Vector> points) {
+    super(points);
+  }
+  
+  @Override
+    public void setPoints(List<Vector> points) {
+    this.points = points;
   }
   @Override
-    public void Draw() {
+    public void drawPath() {
     for (int i = 0; i<points.size()-1; i++) {
       Vector p0= this.points.get(i);
       Vector p1= this.points.get(i+1);
@@ -29,8 +35,8 @@ class HermiteSpline extends Spline {
   
       Vector prev= points.get(i);
      
-      float jump= 1/(float)this.resolution;
-      for (float s = 0; s<= this.resolution; s+=1) {
+      float jump= 1;
+      //for (float s = 0; s<= this.resolution; s+=1) {
         float t = jump * 1;
         float t2 = t*t;
         float t3 = t2*t;
@@ -45,7 +51,7 @@ class HermiteSpline extends Spline {
         line(prev.x(), prev.y(), prev.z(), p.x(), p.y(), p.z());
         prev= p;
         
-      }
+      //}
     }
   }
 }

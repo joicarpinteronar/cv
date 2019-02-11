@@ -29,7 +29,8 @@ import java.util.List;
 import java.util.ArrayList;
 import java.*;
 
-int mode;
+int mode = 0;
+int subdivisions = 50;
 
 Scene scene;
 Interpolator interpolator;
@@ -41,6 +42,14 @@ static int flockWidth = 1280;
 static int flockHeight = 720;
 static int flockDepth = 600;
 static boolean avoidWalls = true;
+
+float granularity = 0.0125;
+int controlPoints = 4;
+
+static boolean immediateMode = true;
+static boolean vertexVertexMode = true;
+static boolean b = false;
+
 int fcount, lastm;
 float frate;
 int fint = 3;
@@ -50,6 +59,7 @@ ArrayList<Boid> flock;
 ArrayList<Boid> randomFlock;
 Frame avatar;
 boolean animate = true;
+ArrayList<Spline> spline = new ArrayList<Spline>();
 int c1[] = new int[4];
 
 void setup() {
@@ -59,18 +69,20 @@ void setup() {
   scene.setAnchor(scene.center());
   scene.setFieldOfView(PI / 3);
   scene.fitBall();
-  scene.setRadius(150);
+  //scene.setRadius(150);
   scene.fitBallInterpolation();
-  interpolator = new Interpolator(scene, new Frame());
+  //interpolator = new Interpolator(scene, new Frame());
   // create and fill the list of boids
+  ArrayList<Vector> points = new ArrayList<Vector>();
   flock = new ArrayList();
   for (int i = 0; i < initBoidNum; i++)
     flock.add(new Boid(new Vector(flockWidth / 2, flockHeight / 2, flockDepth / 2)));
    interpolator = new Interpolator(scene);
-   //interpolator.add(new Casteljau(new Casteljau(points, subdivisions));
-   //interpolator.add(new HermiteSpline(points, subdivisions));
+   spline.add(new HermiteSpline(points));
+   spline.add(new Casteljau(points));
+  // interpolator.add(new HermiteSpline());
    
-   
+   /*
    for(int i = 0; i<4; i++){
     c1[i] = (int)(Math.random()*(initBoidNum-1));
      System.out.println(c1[i]); 
@@ -78,7 +90,7 @@ void setup() {
      randomFlock = new ArrayList();
   for(int i = 0; i<8; i++){
     randomFlock.add(flock.get((int)(Math.random()*(initBoidNum-1))));
-  }
+  }*/
 }
 
 void draw() {
@@ -90,6 +102,32 @@ void draw() {
   // uncomment to asynchronously update boid avatar. See mouseClicked()
   // updateAvatar(scene.trackedFrame("mouseClicked"));
   
+   pushStyle();
+
+  if (b) {
+    strokeWeight(8);
+    switch(mode) {
+    case 0:
+      stroke(255, 0, 0); //HERMITE
+      break;
+    case 1:
+      stroke(100, 100, 255);
+      break;
+    case 2:
+      stroke(255, 100, 100);
+      break;
+    }
+    ArrayList<Vector> points = new ArrayList<Vector>();
+    for (Frame f : interpolator.keyFrames())
+      points.add(f.position());
+      spline.get(mode).setPoints(points);
+      spline.get(mode).drawPath();
+  }
+  popStyle();
+  // uncomment to asynchronously update boid avatar. See mouseClicked()
+  // updateAvatar(scene.trackedFrame("mouseClicked"));
+}
+  /*
   fill(255, 0, 0);
   stroke(255, 0, 255);
    List<Vector> points = new ArrayList<Vector>();
@@ -110,7 +148,7 @@ void draw() {
     new Casteljau(points.subList((int)points.size()/2 -1 ,points.size()-1), subdivisions).Draw();
   }  
 }
-
+*/
 void walls() {
   pushStyle();
   noFill();
@@ -202,16 +240,20 @@ void mouseWheel(MouseEvent event) {
 
 void keyPressed() {
   switch (key) {
+  case 'b':
+    if (!b)
+      for (int i = 0; i <= controlPoints; i++) {
+        int index = int(random(0, initBoidNum));
+        interpolator.addKeyFrame(flock.get(index).frame);
+      } else interpolator.clear();
+    b=!b;
+    break;
   case 'a':
     animate = !animate;
     break;
   case 's':
     if (scene.eye().reference() == null)
       scene.fitBallInterpolation();
-    break;
-      case 'c':
-    mode = (mode+1 < interpolator.size()) ? mode+1 : 0;
-    //println(interpolator.get(mode).name());
     break;
   case 't':
     scene.shiftTimers();
@@ -222,6 +264,50 @@ void keyPressed() {
   case 'v':
     avoidWalls = !avoidWalls;
     break;
+
+  case 'c':
+    mode = (mode+1 < spline.size()) ? mode+1 : 0;
+   // println(spline.get(mode).name());
+    break;
+
+  case 'r':
+    if (controlPoints == 4) controlPoints = 8;
+    else controlPoints = 4;
+    println("Control points: " + controlPoints);
+    break;
+
+  case 'f':
+    vertexVertexMode = !vertexVertexMode;
+    if (vertexVertexMode) println("Vertex Vertex mode");
+    else println("Face Vertex mode");
+    break;
+
+  case 'm':
+    immediateMode = !immediateMode;
+    if (immediateMode) println("Immediate rendering mode");
+    else println("Retained rendering mode");
+    break;
+
+  case '+':
+    granularity *= 0.5;
+    println("Granularity: " + granularity);
+    break;
+  case '-':
+    granularity *= 2;
+    println("Granularity: " + granularity);
+    /*
+    if (interpolator.keyFrames().isEmpty()) {
+     println(" ¡No hay puntos para eliminar! ");
+     break;
+     } else {
+     //interpolator.purge();
+     println(interpolator.keyFrames());
+     println(interpolator.keyFrame(0) + " pos: 0");
+     interpolator.removeKeyFrame(0);
+     println(interpolator.keyFrames());
+     }
+     */
+    break;
   case ' ':
     if (scene.eye().reference() != null)
       resetEye();
@@ -229,4 +315,49 @@ void keyPressed() {
       thirdPerson();
     break;
   }
+}
+
+void vertexVertexDraw(float sc) {
+  beginShape(TRIANGLE_STRIP);
+  vertex(0, 3*sc, 0);
+  vertex(0, 1*sc, 0);
+  vertex(8*sc, 0, 0);
+
+  vertex(0, 0, -1*sc);
+  vertex(0, -1*sc, 0);
+  vertex(8*sc, 0, 0);
+  vertex(0, -3*sc, 0);
+  endShape();
+}
+
+void faceVertexDraw(float sc) {
+  beginShape(TRIANGLE);
+  int[][] faceList = {
+    {0, 1, 2}, 
+    {1, 2, 3}, 
+    {1, 3, 4}, 
+    {1, 4, 5}
+  };
+
+  float[][] vertexList = {
+    {0, 3*sc, 0}, 
+    {8*sc, 0, 0}, 
+    {0, 1*sc, 0}, 
+    {0, 0, -1*sc}, 
+    {0, -1*sc, 0}, 
+    {0, -3*sc, 0}
+  };
+
+
+  for (int i = 0; i < faceList.length; i++) {
+    for (int j = 0; j < faceList[i].length; j++) {
+      int v = faceList[i][j];
+      vertex(vertexList[v][0], vertexList[v][1], vertexList[v][2]);
+    }
+  }
+  endShape();
+}
+
+void line(Vector a, Vector b) {
+  line(a.x(), a.y(), a.z(), b.x(), b.y(), b.z());
 }
