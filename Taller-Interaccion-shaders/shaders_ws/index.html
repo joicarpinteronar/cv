@@ -1,0 +1,87 @@
+<canvas id="scene" width="600px" height="500px"></canvas>
+<script id="3d-vertex-shader" type="x-shader/x-vertex">
+<script src="shader.js"></script>
+precision mediump float;
+
+uniform mat4 mProj;
+uniform mat4 mView;
+uniform mat4 mWorld;
+
+attribute vec3 a_position;
+attribute vec3 a_normal;
+
+varying vec3 fPos;
+varying vec3 fNorm;
+
+void main()
+{
+	fPos = (mWorld * vec4(a_position, 1.0)).xyz;
+	fNorm = (mWorld * vec4(a_normal, 0.0)).xyz;
+
+	gl_Position = mProj * mView * vec4(fPos, 1.0);
+}
+</script>
+<script id="3d-fragment-shader" type="x-shader/x-fragment">
+precision mediump float;
+
+uniform vec3 pointLightPosition;
+uniform vec4 meshColor;
+
+uniform samplerCube lightShadowMap;
+
+varying vec3 fPos;
+varying vec3 fNorm;
+
+void main()
+{
+	vec3 toLightNormal = normalize(pointLightPosition - fPos);
+
+  float fromLightToFrag = length(fPos - pointLightPosition);
+
+	float shadowMapValue = textureCube(lightShadowMap, -toLightNormal).r;
+
+	float lightIntensity = 0.15;
+	if (shadowMapValue >= fromLightToFrag) {
+		lightIntensity += 0.75 * max(dot(fNorm, toLightNormal), 0.0);
+	}
+
+	gl_FragColor = vec4(meshColor.rgb * lightIntensity, meshColor.a);
+}
+</script>
+<script id="shadowMap-vs" type="x-shader/x-vertex">
+precision mediump float;
+
+uniform mat4 mProj;
+uniform mat4 mView;
+uniform mat4 mWorld;
+
+attribute vec3 a_position;
+
+varying vec3 fPos;
+
+void main()
+{
+	fPos = (mWorld * vec4(a_position, 1.0)).xyz;
+
+	gl_Position = mProj * mView * vec4(fPos, 1.0);
+}
+</script>
+<script id="shadowMap-fs" type="x-shader/x-fragment">
+precision mediump float;
+
+uniform vec3 pointLightPosition;
+
+varying vec3 fPos;
+
+void main()
+{
+	vec3 fromLightToFrag = (fPos - pointLightPosition);
+
+  float lightFragDist =length(fromLightToFrag);
+
+	gl_FragColor = vec4(lightFragDist, lightFragDist, lightFragDist, 1.0);
+}
+</script>
+ <script src="https://webglfundamentals.org/webgl/resources/webgl-utils.js"></script> 
+ <script src="https://webglfundamentals.org/webgl/resources/m4.js"></script>
+ <script src="https://webglfundamentals.org/webgl/resources/primitives.js"></script>
