@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 3.3.2">
+
+    <issue
+        id="GradleCompatible"
+        severity="Fatal"
+        message="Project depends on com.google.android.support:wearable:2.0.5, so it must also depend (as a provided dependency) on com.google.android.wearable:wearable:2.0.5"
+        category="Correctness"
+        priority="8"
+        summary="Incompatible Gradle Versions"
+        explanation="There are some combinations of libraries, or tools and libraries, that are incompatible, or can lead to bugs. One such incompatibility is compiling with a version of the Android support libraries that is not the latest version (or in particular, a version lower than your `targetSdkVersion`).">
+        <location
+            file="/home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/build.gradle"/>
+    </issue>
+
+</issues>

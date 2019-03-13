@@ -1,0 +1,4 @@
+#Mon Jun 04 16:41:40 COT 2018
+base.0=C\:\\Users\\Jonathan\\Desktop\\Visual\\android4927508312497646849sketch\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\5
+path.0=classes.dex
+renamed.0=classes.dex

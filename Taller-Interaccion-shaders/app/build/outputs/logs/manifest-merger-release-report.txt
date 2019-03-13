@@ -1,0 +1,170 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml:2:1-11:12
+INJECTED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml:2:1-11:12
+INJECTED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml:2:1-11:12
+INJECTED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:design:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/design-26.0.0.aar/445be2d926306e348be06c8e102caf7f/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0.aar/62d7b32ea5fcfecd5b4fc7c55139d895/AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.support:wearable:2.0.5] /home/ivan/.gradle/caches/transforms-1/files-1.1/wearable-2.0.5.aar/b46574da15d05f5ef0d0eb0378c1b4b8/AndroidManifest.xml:2:1-10:12
+MERGED from [com.android.support:animated-vector-drawable:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0.aar/e88a74b2d60bf63873e675589e9754c2/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0.aar/39dfc6dcfcd56cbfc6890ea51b62a703/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:recyclerview-v7:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.0.aar/db2ba4e487ddf539987bf62f57f4f0c2/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:transition:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/transition-26.0.0.aar/6c6f2855141ab2c9573e45b582af0849/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0.aar/f22fd82144f57eb602efc0c76121ea93/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:percent:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/percent-26.0.0.aar/f44faa7dd2835e4d5a6545d8e116bdcd/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-media-compat:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0.aar/ad9f39473376d4a51fc526d2ba1e5830/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0.aar/95c3ffc5353487079cb0608c3c178138/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0.aar/828ade44747d3e774a55821f2168e9c2/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0.aar/bd0007c612bf2064371cc8aed3e4e2d0/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0.aar/3c2e42fd7cfec5382e708463b2d33036/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:multidex:1.0.1] /home/ivan/.gradle/caches/transforms-1/files-1.1/multidex-1.0.1.aar/8a5fa600ef756556c1e78e445fb5acf5/AndroidManifest.xml:16:1-19:12
+INJECTED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml:2:1-11:12
+INJECTED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml:2:1-11:12
+INJECTED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml:2:1-11:12
+	package
+		ADDED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml:2:120-157
+		INJECTED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml
+		INJECTED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml:2:94-119
+		INJECTED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml
+		INJECTED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml:2:70-93
+		INJECTED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml
+		INJECTED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml
+application
+ADDED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml:3:5-10:19
+MERGED from [com.android.support:design:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/design-26.0.0.aar/445be2d926306e348be06c8e102caf7f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/design-26.0.0.aar/445be2d926306e348be06c8e102caf7f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0.aar/62d7b32ea5fcfecd5b4fc7c55139d895/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0.aar/62d7b32ea5fcfecd5b4fc7c55139d895/AndroidManifest.xml:25:5-29:19
+MERGED from [com.google.android.support:wearable:2.0.5] /home/ivan/.gradle/caches/transforms-1/files-1.1/wearable-2.0.5.aar/b46574da15d05f5ef0d0eb0378c1b4b8/AndroidManifest.xml:6:3-8:17
+MERGED from [com.google.android.support:wearable:2.0.5] /home/ivan/.gradle/caches/transforms-1/files-1.1/wearable-2.0.5.aar/b46574da15d05f5ef0d0eb0378c1b4b8/AndroidManifest.xml:6:3-8:17
+MERGED from [com.android.support:animated-vector-drawable:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0.aar/e88a74b2d60bf63873e675589e9754c2/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0.aar/e88a74b2d60bf63873e675589e9754c2/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0.aar/39dfc6dcfcd56cbfc6890ea51b62a703/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0.aar/39dfc6dcfcd56cbfc6890ea51b62a703/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.0.aar/db2ba4e487ddf539987bf62f57f4f0c2/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.0.aar/db2ba4e487ddf539987bf62f57f4f0c2/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/transition-26.0.0.aar/6c6f2855141ab2c9573e45b582af0849/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/transition-26.0.0.aar/6c6f2855141ab2c9573e45b582af0849/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0.aar/f22fd82144f57eb602efc0c76121ea93/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0.aar/f22fd82144f57eb602efc0c76121ea93/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:percent:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/percent-26.0.0.aar/f44faa7dd2835e4d5a6545d8e116bdcd/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:percent:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/percent-26.0.0.aar/f44faa7dd2835e4d5a6545d8e116bdcd/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-media-compat:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0.aar/ad9f39473376d4a51fc526d2ba1e5830/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0.aar/ad9f39473376d4a51fc526d2ba1e5830/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0.aar/95c3ffc5353487079cb0608c3c178138/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0.aar/95c3ffc5353487079cb0608c3c178138/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0.aar/828ade44747d3e774a55821f2168e9c2/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0.aar/828ade44747d3e774a55821f2168e9c2/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0.aar/bd0007c612bf2064371cc8aed3e4e2d0/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0.aar/bd0007c612bf2064371cc8aed3e4e2d0/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0.aar/3c2e42fd7cfec5382e708463b2d33036/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0.aar/3c2e42fd7cfec5382e708463b2d33036/AndroidManifest.xml:25:5-29:19
+	android:label
+		ADDED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml:3:48-72
+	android:icon
+		ADDED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml:3:18-47
+activity#processing.test.toonshading.MainActivity
+ADDED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml:4:9-9:20
+	android:theme
+		ADDED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml:4:48-115
+	android:name
+		ADDED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml:4:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml:5:13-8:29
+action#android.intent.action.MAIN
+ADDED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml:6:17-68
+	android:name
+		ADDED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml:6:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml:7:17-76
+	android:name
+		ADDED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml:7:27-74
+uses-sdk
+INJECTED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml
+INJECTED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/design-26.0.0.aar/445be2d926306e348be06c8e102caf7f/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/design-26.0.0.aar/445be2d926306e348be06c8e102caf7f/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0.aar/62d7b32ea5fcfecd5b4fc7c55139d895/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0.aar/62d7b32ea5fcfecd5b4fc7c55139d895/AndroidManifest.xml:21:5-23:78
+MERGED from [com.google.android.support:wearable:2.0.5] /home/ivan/.gradle/caches/transforms-1/files-1.1/wearable-2.0.5.aar/b46574da15d05f5ef0d0eb0378c1b4b8/AndroidManifest.xml:4:3-70
+MERGED from [com.google.android.support:wearable:2.0.5] /home/ivan/.gradle/caches/transforms-1/files-1.1/wearable-2.0.5.aar/b46574da15d05f5ef0d0eb0378c1b4b8/AndroidManifest.xml:4:3-70
+MERGED from [com.android.support:animated-vector-drawable:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0.aar/e88a74b2d60bf63873e675589e9754c2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0.aar/e88a74b2d60bf63873e675589e9754c2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0.aar/39dfc6dcfcd56cbfc6890ea51b62a703/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0.aar/39dfc6dcfcd56cbfc6890ea51b62a703/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.0.aar/db2ba4e487ddf539987bf62f57f4f0c2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.0.aar/db2ba4e487ddf539987bf62f57f4f0c2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/transition-26.0.0.aar/6c6f2855141ab2c9573e45b582af0849/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/transition-26.0.0.aar/6c6f2855141ab2c9573e45b582af0849/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0.aar/f22fd82144f57eb602efc0c76121ea93/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0.aar/f22fd82144f57eb602efc0c76121ea93/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:percent:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/percent-26.0.0.aar/f44faa7dd2835e4d5a6545d8e116bdcd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:percent:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/percent-26.0.0.aar/f44faa7dd2835e4d5a6545d8e116bdcd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0.aar/ad9f39473376d4a51fc526d2ba1e5830/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0.aar/ad9f39473376d4a51fc526d2ba1e5830/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0.aar/95c3ffc5353487079cb0608c3c178138/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0.aar/95c3ffc5353487079cb0608c3c178138/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0.aar/828ade44747d3e774a55821f2168e9c2/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0.aar/828ade44747d3e774a55821f2168e9c2/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0.aar/bd0007c612bf2064371cc8aed3e4e2d0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0.aar/bd0007c612bf2064371cc8aed3e4e2d0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0.aar/3c2e42fd7cfec5382e708463b2d33036/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0.aar/3c2e42fd7cfec5382e708463b2d33036/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:multidex:1.0.1] /home/ivan/.gradle/caches/transforms-1/files-1.1/multidex-1.0.1.aar/8a5fa600ef756556c1e78e445fb5acf5/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:multidex:1.0.1] /home/ivan/.gradle/caches/transforms-1/files-1.1/multidex-1.0.1.aar/8a5fa600ef756556c1e78e445fb5acf5/AndroidManifest.xml:18:5-42
+INJECTED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml
+INJECTED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/design-26.0.0.aar/445be2d926306e348be06c8e102caf7f/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml
+		ADDED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml
+		INJECTED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml
+		ADDED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml
+		INJECTED from /home/ivan/Computacion Visual/VisualComputing/Interaction - Shaders/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/design-26.0.0.aar/445be2d926306e348be06c8e102caf7f/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0.aar/62d7b32ea5fcfecd5b4fc7c55139d895/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0.aar/62d7b32ea5fcfecd5b4fc7c55139d895/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0.aar/e88a74b2d60bf63873e675589e9754c2/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0.aar/e88a74b2d60bf63873e675589e9754c2/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0.aar/39dfc6dcfcd56cbfc6890ea51b62a703/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0.aar/39dfc6dcfcd56cbfc6890ea51b62a703/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.0.aar/db2ba4e487ddf539987bf62f57f4f0c2/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.0.aar/db2ba4e487ddf539987bf62f57f4f0c2/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/transition-26.0.0.aar/6c6f2855141ab2c9573e45b582af0849/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/transition-26.0.0.aar/6c6f2855141ab2c9573e45b582af0849/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0.aar/f22fd82144f57eb602efc0c76121ea93/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0.aar/f22fd82144f57eb602efc0c76121ea93/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:percent:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/percent-26.0.0.aar/f44faa7dd2835e4d5a6545d8e116bdcd/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:percent:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/percent-26.0.0.aar/f44faa7dd2835e4d5a6545d8e116bdcd/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-media-compat:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0.aar/ad9f39473376d4a51fc526d2ba1e5830/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0.aar/ad9f39473376d4a51fc526d2ba1e5830/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0.aar/95c3ffc5353487079cb0608c3c178138/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0.aar/95c3ffc5353487079cb0608c3c178138/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0.aar/828ade44747d3e774a55821f2168e9c2/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0.aar/828ade44747d3e774a55821f2168e9c2/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0.aar/bd0007c612bf2064371cc8aed3e4e2d0/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0.aar/bd0007c612bf2064371cc8aed3e4e2d0/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0.aar/3c2e42fd7cfec5382e708463b2d33036/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0.aar/3c2e42fd7cfec5382e708463b2d33036/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:design:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/design-26.0.0.aar/445be2d926306e348be06c8e102caf7f/AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:design:26.0.0] /home/ivan/.gradle/caches/transforms-1/files-1.1/design-26.0.0.aar/445be2d926306e348be06c8e102caf7f/AndroidManifest.xml:27:13-51
+uses-library#com.google.android.wearable
+ADDED from [com.google.android.support:wearable:2.0.5] /home/ivan/.gradle/caches/transforms-1/files-1.1/wearable-2.0.5.aar/b46574da15d05f5ef0d0eb0378c1b4b8/AndroidManifest.xml:7:5-88
+	android:required
+		ADDED from [com.google.android.support:wearable:2.0.5] /home/ivan/.gradle/caches/transforms-1/files-1.1/wearable-2.0.5.aar/b46574da15d05f5ef0d0eb0378c1b4b8/AndroidManifest.xml:7:62-86
+	android:name
+		ADDED from [com.google.android.support:wearable:2.0.5] /home/ivan/.gradle/caches/transforms-1/files-1.1/wearable-2.0.5.aar/b46574da15d05f5ef0d0eb0378c1b4b8/AndroidManifest.xml:7:19-61
